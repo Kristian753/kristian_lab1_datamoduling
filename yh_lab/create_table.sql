@@ -33,7 +33,8 @@ CREATE TABLE kurs (
     kurs_id SERIAL PRIMARY KEY,
     namn TEXT,
     kurskod TEXT,
-    poang INT
+    poang INT,
+    program_id INT REFERENCES program(program_id)
 );
 -- Tabell för utbildare kopplade personer
 CREATE TABLE utbildare (

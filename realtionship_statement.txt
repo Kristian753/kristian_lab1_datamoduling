@@ -1,0 +1,31 @@
+Relation ship statement YrkesCo
+
+1. Student
+   - En student tillhör en klass (M:1)
+
+2. Klass
+   - En klass har många studenter (1:M)
+   - En klass tillhör ett program (M:1)
+   - En klass leds av en utbildningsledare (M:1)
+
+3. Program 
+   - Ett program har 3 klasser (1:3)
+   - Ett program innehåller många kurser (1:M)
+
+4. Kurs 
+   - Flera kurser ingår i ett program (M:1)
+   - Flera kurser undervisas av flera utbildare (M:N)
+
+5. Utbildare
+   - En utbildare undervisar många kurser (1:M)
+   - En utbildare kan vara en konsult (1:0..1)
+
+6. utbildningsledare
+   - En utbildningsledare har 3 klasser (1:3)
+
+7. Konsult 
+   - En konsult är en utbildare (1:1)
+   - Flera konsulter representerar ett företag (M:1)
+
+8. Företag 
+   - Ett företag anlitar många konsulter (1:M)

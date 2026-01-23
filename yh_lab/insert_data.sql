@@ -7,7 +7,7 @@ INSERT INTO person (fornman, efternamn, personnummer, email) VALUES
 INSERT INTO program (namn) VALUES
 ('Data engineer');
 -- Kopplar utbildningsledare till person.
-INSERT INTO utbildningsledare (person_id) VALUES
+INSERT INTO utbildningsledare (person_id, fornamn, efternamn, email) VALUES
 (1);
 -- Skapar klass kopplad till program.
 INSERT INTO klass (program_id, utbildningsledare_id) VALUES
