@@ -9,7 +9,7 @@ CREATE TABLE person (
 -- Tabell för utbildningsprogram inom skolan
 CREATE TABLE program (
     program_id SERIAL PRIMARY KEY,
-    namn TEXT
+    program_namn TEXT
 );
 -- Tabell för studenter kopplade personer
 CREATE TABLE student (
@@ -31,9 +31,10 @@ CREATE TABLE utbildningsledare (
 -- Tabell för kurser inom utbildning
 CREATE TABLE kurs (
     kurs_id SERIAL PRIMARY KEY,
-    namn TEXT,
+    kurs_namn TEXT,
     kurskod TEXT,
     poang INT,
+    beskrivning TEXT,
     program_id INT REFERENCES program(program_id)
 );
 -- Tabell för utbildare kopplade personer
@@ -47,3 +48,11 @@ CREATE TABLE utbildare_kurs (
     kurs_id INT REFERENCES kurs(kurs_id),
     PRIMARY KEY (utbildare_id, kurs_id)
 );
+
+CREATE TABLE foretag (
+    foretag_id SERIAL PRIMARY KEY,
+    organisationsnummer TEXT,
+    foretagsnamn TEXT,
+    adress TEXT,
+    har_f_skatt BOOLEAN
+)

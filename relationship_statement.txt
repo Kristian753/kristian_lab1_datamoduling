@@ -14,7 +14,7 @@ Relation ship statement YrkesCo
 
 4. Kurs 
    - Flera kurser ingår i ett program (M:1)
-   - Flera kurser undervisas av flera utbildare (M:N)
+   - Flera kurser undervisas av flera utbildare (M:M)
 
 5. Utbildare
    - En utbildare undervisar många kurser (1:M)
