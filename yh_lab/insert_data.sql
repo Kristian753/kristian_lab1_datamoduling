@@ -1,10 +1,10 @@
 -- Lägger in personuppgifter för alla.
 INSERT INTO person (fornamn, efternamn, personnummer, email) VALUES
-(1,'Kristian', 'Tawfeeq', '20060723-6932', 'kristiantawfeeq33@gmail.com'),
-(2,'Angham', 'Ziad', '19790523-1283', 'anghamziad@gmail.com'),
-(3,'Alawie', 'Galbi', '19900101-1459', 'alawiegalbi@gmail.com'),
-(4,'Abo', 'Sargon', '19531123-7854', 'abosargon@gmail.com'),
-(5,'Jalal', 'Ouzo', '19641230-0479', 'jalalouzo@gmail.com');
+('Kristian', 'Tawfeeq', '20060723-6932', 'kristiantawfeeq33@gmail.com'),
+('Angham', 'Ziad', '19790523-1283', 'anghamziad@gmail.com'),
+('Alawie', 'Galbi', '19900101-1459', 'alawiegalbi@gmail.com'),
+('Abo', 'Sargon', '19531123-7854', 'abosargon@gmail.com'),
+('Jalal', 'Ouzo', '19641230-0479', 'jalalouzo@gmail.com');
 -- Skapar ett utbildningsprogram i databasen.
 INSERT INTO program (program_id, program_namn) VALUES
 (1,'Data engineer'),
@@ -45,3 +45,4 @@ INSERT INTO kurs (kurs_namn, kurskod, poang, beskrivning, program_id) VALUES
 ('Automationssystem', 'AE3030', 7.5, 'Principer för design och implementering av automationssystem.', 3);
 
 
+INSERT INTO utbildare (utbildare_id, person_id) VALUES
