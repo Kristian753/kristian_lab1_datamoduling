@@ -22,7 +22,7 @@ CREATE TABLE student (
     student_id SERIAL PRIMARY KEY,
     fornamn VARCHAR(50) NOT NULL,
     efternamn VARCHAR(50) NOT NULL,
-    personnummer VARCHAR(12) UNIQUE NOT NULL,
+    personnummer VARCHAR(13) UNIQUE NOT NULL,
     email VARCHAR(100),
     klass_id INT REFERENCES klass(klass_id)
 );

@@ -2,15 +2,14 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15
-    container_name: yrkesco-db
+    container_name: kristian-db
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin123
-      POSTGRES_DB: yrkesco_db
+      POSTGRES_DB: kristian_db
     ports:
-      
-"5433:5432"
-volumes:
-postgres_data:/var/lib/postgresql/data
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 volumes:
   postgres_data: {}
